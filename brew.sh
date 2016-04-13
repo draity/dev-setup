@@ -172,7 +172,7 @@ brew cask install --appdir="/Applications" flux
 brew cask install --appdir="/Applications" macpass
 
 #Remove comment to install LaTeX distribution MacTeX
-#brew cask install --appdir="/Applications" mactex
+brew cask install --appdir="/Applications" mactex
 
 # Link cask apps to Alfred
 brew cask alfred link
