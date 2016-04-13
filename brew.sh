@@ -165,6 +165,11 @@ brew cask install --appdir="/Applications" dropbox
 # brew cask install --appdir="/Applications" evernote
 #brew cask install --appdir="/Applications" gimp
 #brew cask install --appdir="/Applications" inkscape
+brew cask install --appdir="/Applications" vlc
+brew cask install --appdir="/Applications" spotify
+brew cask install --appdir="/Applications" gitup
+brew cask install --appdir="/Applications" flux
+brew cask install --appdir="/Applications" macpass
 
 #Remove comment to install LaTeX distribution MacTeX
 #brew cask install --appdir="/Applications" mactex
