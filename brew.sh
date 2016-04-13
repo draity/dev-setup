@@ -111,13 +111,13 @@ brew install git-flow
 brew install git-extras
 brew install imagemagick --with-webp
 brew install lua
-brew install lynx
 brew install p7zip
 brew install pigz
 brew install pv
 brew install rename
 brew install rhino
 brew install speedtest_cli
+# brew install lynx			# text based browser
 brew install ssh-copy-id
 brew install tree
 brew install webkit2png
