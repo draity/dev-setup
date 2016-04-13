@@ -102,7 +102,7 @@ brew install homebrew/php/php55 --with-gmp
 # brew install xz
 
 # Install other useful binaries.
-brew install ack
+brew install ack 			# faster, intuitive alternative to grep
 # brew install dark-mode
 brew install exiftool
 brew install git
@@ -111,12 +111,12 @@ brew install git-flow
 brew install git-extras
 brew install imagemagick --with-webp
 brew install lua
-brew install p7zip
-brew install pigz
-brew install pv
-brew install rename
-brew install rhino
 # brew install lynx			# text based browser
+brew install p7zip			# 7zip cli
+brew install pigz			# parallel implementation of gzip
+brew install pv				# Pipe Viewer is an Open Source tool to monitor the progress of data through a pipeline between any two processes, giving a progress bar, ETA, etc.
+brew install rename			# rename utility
+brew install rhino			# Rhino is an open-source implementation of JavaScript written entirely in Java. It is typically embedded into Java applications to provide scripting to end users. It is embedded in J2SE 6 as the default Java scripting engine.
 # brew install speedtest_cli
 brew install ssh-copy-id
 brew install tree
