@@ -103,6 +103,14 @@ function runDots() {
             echo ""
             ./apm.sh
         fi
+        if [ $ARG == "gems" ] || [ $ARG == "all" ]; then
+            # Run the gems.sh Script
+            echo "------------------------------"
+            echo "Setting up some ruby gems."
+            echo "------------------------------"
+            echo ""
+            ./gems.sh
+        fi
     done
 
     echo "------------------------------"
