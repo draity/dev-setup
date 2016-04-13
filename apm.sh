@@ -23,4 +23,6 @@ if hash apm 2>/dev/null; then
     apm install linter-jshint
     apm install open-recent
     apm install pigments
+else
+    echo -e "\e[31mFailed to install Atom packages because command \e[33mapm\e[31m does not exist\e[0m"
 fi
