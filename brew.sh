@@ -153,8 +153,8 @@ brew cask install --appdir="~/Applications" xquartz
 brew cask install --appdir="/Applications" atom
 brew cask install --appdir="/Applications" virtualbox
 brew cask install --appdir="/Applications" vagrant
-brew cask install --appdir="/Applications" heroku-toolbelt
 brew cask install --appdir="/Applications" macdown
+# brew cask install --appdir="/Applications" heroku-toolbelt
 
 # Misc casks
 brew cask install --appdir="/Applications" google-chrome
