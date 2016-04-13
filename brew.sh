@@ -143,6 +143,7 @@ brew link libxslt --force
 
 # Core casks
 brew cask install --appdir="/Applications" alfred
+brew cask install --appdir="/Applications" bettertouchtool
 # brew cask install --appdir="~/Applications" iterm2
 brew cask install --appdir="~/Applications" java
 brew cask install --appdir="~/Applications" xquartz
