@@ -103,8 +103,8 @@ brew install homebrew/php/php55 --with-gmp
 
 # Install other useful binaries.
 brew install ack
-#brew install exiv2
 # brew install dark-mode
+brew install exiftool
 brew install git
 brew install git-lfs
 brew install git-flow
