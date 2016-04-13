@@ -175,7 +175,7 @@ brew cask install --appdir="/Applications" macpass
 brew cask install --appdir="/Applications" mactex
 
 # Link cask apps to Alfred
-brew cask alfred link
+# brew cask alfred link                                  # not working but also not needed?!
 
 # Install Docker, which requires virtualbox
 brew install docker
