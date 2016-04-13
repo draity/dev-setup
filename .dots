@@ -95,6 +95,14 @@ function runDots() {
             echo ""
             ./android.sh
         fi
+        if [ $ARG == "apm" ] || [ $ARG == "all" ]; then
+            # Run the apm.sh Script
+            echo "------------------------------"
+            echo "Setting up Atom packages."
+            echo "------------------------------"
+            echo ""
+            ./apm.sh
+        fi
     done
 
     echo "------------------------------"
