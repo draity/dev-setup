@@ -125,6 +125,7 @@ brew install webkit2png
 brew install pkg-config libffi
 brew install pandoc
 brew install tmux
+brew install entr			# Run arbitrary commands when files change
 
 # Lxml and Libxslt
 brew install libxml2
