@@ -138,8 +138,8 @@ brew link libxslt --force
 # brew install heroku-toolbelt
 # heroku update
 
-# Install Cask
-brew install caskroom/cask/brew-cask
+# Install Cask -> not needed anymore, included in home-brew
+# brew install caskroom/cask/brew-cask
 
 # Core casks
 brew cask install --appdir="/Applications" alfred
