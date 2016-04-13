@@ -116,8 +116,8 @@ brew install pigz
 brew install pv
 brew install rename
 brew install rhino
-brew install speedtest_cli
 # brew install lynx			# text based browser
+# brew install speedtest_cli
 brew install ssh-copy-id
 brew install tree
 brew install webkit2png
