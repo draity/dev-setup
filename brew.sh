@@ -126,6 +126,7 @@ brew install pkg-config libffi
 brew install pandoc
 brew install tmux
 brew install entr			# Run arbitrary commands when files change
+brew install android-platform-tools
 
 # Lxml and Libxslt
 brew install libxml2
