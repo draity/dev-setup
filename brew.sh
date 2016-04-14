@@ -66,6 +66,29 @@ grep -q "$LINE" ~/.extra || echo "$LINE" >> ~/.extra
 brew install vim --override-system-vi
 brew install homebrew/dupes/grep
 brew install homebrew/dupes/openssh
+## Make ssh-agent useable with keychain
+# NEED TO TURN OFF System Integrity Protection using Recovery (CMD+R at startup) and csrutil disable
+# Autostart brew ssh-agent using launchd
+sudo /usr/libexec/PlistBuddy /System/Library/LaunchAgents/org.openbsd.ssh-agent.plist<<EOF
+Delete :ProgramArguments
+Add :ProgramArguments array
+Add :ProgramArguments: string /usr/local/bin/ssh-agent
+Add :ProgramArguments: string -D
+Add :ProgramArguments: string -t 1d
+Save
+Exit
+EOF
+launchctl unload /System/Library/LaunchAgents/org.openbsd.ssh-agent.plist
+launchctl load -w /System/Library/LaunchAgents/org.openbsd.ssh-agent.plist
+launchctl start org.openbsd.ssh-agent
+# helper script to get passphrases via keychain
+cat >/usr/local/bin/ssh-ask-keychain <<EOL
+#!/bin/sh
+
+security find-generic-password -l "SSH: /Users/david/.ssh/id_rsa" -gw
+EOL
+chmod u+x /usr/local/bin/ssh-ask-keychain
+
 brew install homebrew/dupes/screen
 brew install homebrew/php/php55 --with-gmp
 
